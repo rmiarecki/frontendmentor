@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+body {
+    font-family: 'Libre Franklin', sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    font-family: 'Libre Franklin', sans-serif;
+    width: 900px;
+    text-align: center;
+    display: grid;
+    grid-gap: 30px;
+    margin: 3rem;
+}
+
+.dashboard img {
+    width: 100%;
+}
+
+.logo img {
+    width: 10%;
+    text-align: center;
+}
+
+.info {
+    color: hsl(0, 0%, 59%);
+    font-weight: 300;
+    font-size: 40px;
+}
+.soon {
+    color: hsl(209, 33%, 12%);
+    font-weight: 700;
+    font-size: 40px;
+}
+p {
+    color: hsl(209, 33%, 12%);
+    font-size: 22px;
+    font-weight: 300;
+}
+
+.email {
+    /* display: flex; */
+    display: grid;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    grid-template-columns: 55% 30%;
+    grid-template-areas: "a b""c d";
+    margin-bottom: 40px;
+    
+}
+
+.input {
+    padding: 1rem 3rem;
+    color:hsl(0, 0%, 59%);
+    border-radius: 40px;
+    border: 1px solid hsl(0, 0%, 59%);
+    margin-right: 2rem;
+    width: 100%;
+    font-size: 16px;
+    grid-area: a;
+}
+
+.btn {
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+    background-color: hsl(223, 87%, 63%);
+    padding: 1.1rem 4rem;
+    border-radius: 40px;
+    border: none;
+    /* margin-left: 7rem; */
+    grid-area: b;
+    width: 250px;
+}
+
+.btn:hover {
+    background-color: hsl(223, 89%, 73%);
+    cursor: pointer;
+}
+
+.error {
+    display: none;
+    color: hsl(354, 100%, 66%);
+    grid-area: c;
+}
+
+.social {
+    color: hsl(223, 87%, 63%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social i {
+    color: rgb(87, 171, 250);
+    border: 0.5px solid hsl(0, 0%, 59%);
+    margin-left: 15px;
+    width: 10px;
+    height: 10px;
+    padding: 15px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social i:hover{
+    cursor: pointer;
+    color: #fff;
+    background-color: rgb(87, 171, 250);
+}
+.social a {
+    text-decoration: none;
+}
+.copyright {
+    color:hsl(0, 0%, 59%);;
+}
+
+@media only screen and (max-width: 700px) {
+    .container {
+        margin: 100px;
+        width: 500px;
+    }
+    .dashboard {
+        /* display: flex; */
+
+        /* width: 50%; */
+    }
+    .email {
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between;
+        align-items: center;
+
+    } 
+    .input {
+        width: 50%;
+        margin: 0.5rem;
+    }
+
+    .btn {
+        margin-top: 3rem;
+    }
+    
+} 
+
+/* 
+# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Blue: hsl(223, 87%, 63%)
+
+### Secondary
+
+- Pale Blue: hsl(223, 100%, 88%)
+- Light Red: hsl(354, 100%, 66%)
+
+### Neutral
+
+- Gray: hsl(0, 0%, 59%)
+- Very Dark Blue: hsl(209, 33%, 12%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 20px
+
+### Fonts
+
+- Family: [Libre Franklin](https://fonts.google.com/specimen/Libre+Franklin)
+- Weights: 300, 600, 700
+
+## Icons
+
+For the social icons, you can use a font icon library. Some suggestions can be found below:
+
+- [Font Awesome](https://fontawesome.com)
+- [IcoMoon](https://icomoon.io)
+- [Ionicons](https://ionicons.com) */
