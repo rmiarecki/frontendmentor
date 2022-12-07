@@ -1,7 +1,6 @@
 # Finished challenge
 
 ![Finshed challenge - 01](./finished/finished1.png)
-![Finshed challenge - 02](./finished/finished2.png)
 
 # Frontend Mentor - Single price grid component
 
