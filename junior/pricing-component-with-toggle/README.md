@@ -1,4 +1,4 @@
-# Frontend Mentor - Pricing component with toggle
+# Finished challenge
 ![finished1](./finished/finished1-desktop.jpeg)
 ![finished2](./finished/finished2-desktop.jpeg)
 
