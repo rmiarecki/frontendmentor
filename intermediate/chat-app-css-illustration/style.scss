@@ -1,0 +1,208 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: hsl(270, 20%, 96%);
+    font-family: 'Rubik', sans-serif;
+}
+.white-icons {
+    color: #fff;
+}
+
+.left-background {
+    width: 600px;
+    height: 90vh;
+    background-image: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    position: absolute;
+    border-bottom-left-radius: 20rem;
+    border-bottom-right-radius: 20rem;
+    z-index: -1;
+}
+.right-background {
+    width: 300px;
+    height: 80vh;
+    background-color: rgb(238, 238, 238);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-top-left-radius: 20rem;
+    z-index: -1;
+    display: block;
+}
+.container {
+    display: flex;
+    margin: auto;
+    width: 1000px;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+}
+.phone-content {
+    margin-right: 5rem;
+}
+.phone {
+    width: 290px;
+    height: 630px;
+    background-color: #fff;
+    border: 13px solid white;
+    border-radius: 25px;
+    background-color: hsl(270, 20%, 96%);
+}
+.top-phone {
+    padding: 0.6rem 0.2rem;
+    background-image: linear-gradient(to left, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    img {
+        width: 13%;
+        border-radius: 50%;
+        border: 1px solid #fff;
+    }
+}
+.walkers {
+    color: white;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;            
+    h5 {
+        margin: 0;
+        font-weight: 500;
+    }
+    h6 {
+        margin: 0;
+        font-weight: 400;
+        color: rgb(226, 226, 226);
+    }
+}
+.name {
+    margin-right: 2rem;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+}
+.notch {
+    width: 150px;
+    height: 25px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    color: white;
+    background-color: #fff;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: -12px;
+}
+.bottom-phone {
+    padding: 1rem;
+}
+.message {
+    font-size: 12px;
+    padding: 0.6rem;
+    border-radius: 15px;
+    width: 150px;
+    margin-bottom: 0.6rem;
+}
+.incoming-message {
+    margin-right: auto;
+    background-color: hsl(275, 100%, 94%);
+    color: hsl(276, 55%, 52%);
+}
+.my-message {
+    margin-left: auto;
+    background-color: #fff;
+    color: hsl(271, 15%, 43%);
+}
+.pictures {
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-bottom: 0.6rem;
+    img {
+        width: 30%;
+        border-radius: 15px;
+    }
+}
+.walk {
+    background-image: linear-gradient(to right, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    display: flex;
+    align-items: center;
+    width: 180px;
+    justify-content: space-between;
+}
+.time {
+    display: flex;
+    justify-content: center;
+    color: rgb(230, 230, 230);
+    font-size: 10px;
+}
+.circle-icon {
+    margin-right: 5px;
+}
+.cost {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 0.5rem;
+}
+.send {
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 0.5rem 0.8rem;
+    width: 90%;
+}
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(271, 36%, 24%);
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+}
+.info {
+    width: 450px;
+    margin-left: 5rem;
+    line-height: 26px;
+    h1 {
+        font-weight: 500;
+        margin-bottom: 2rem;
+        color: hsl(271, 36%, 24%);
+    }
+    p {
+        color: hsl(270, 7%, 64%);
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        width: 300px;
+    }
+    .phone-content {
+        margin: 2rem 0;
+        padding: 0;
+    }
+    .info {
+        text-align: center;
+        margin: 1rem 0;
+        width: 300px;    
+    }
+    .left-background {
+        height: 400px;
+        width: 200px;
+        border-bottom-left-radius: 0;
+    }
+    .right-background {
+        display: none;
+    }
+}
