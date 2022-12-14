@@ -1,6 +1,6 @@
 # Finished challenge
 
-![Finished-desktop](./finished/finished-desktop.jpeg)
+![Finished-desktop](./finished/finished-desktop.jpg)
 
 
 # Frontend Mentor - Chat app CSS illustration
