@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <!-- <script src="https://kit.fontawesome.com/598039b7f6.js" crossorigin="anonymous"></script> -->
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+
+</head>
+<body>
+  <header>
+    <div>
+       <img src="./images/logo.svg" alt="">
+    </div>
+    <div class="score">
+      <p>Score</p>
+      <h2 id="my-scores">0</h2>
+    </div>
+  </header>
+  <main>
+    <div class="rules">
+      <div class="rules-top">
+        <h2>RULES</h2>
+        <img src="./images/icon-close.svg" alt="" id="close-btn" class="close">
+      </div>
+      <div><img src="./images/image-rules.svg" alt=""></div>
+    </div>
+
+    <div class="game-icons">
+      <img src="./images/bg-triangle.svg" alt="" class="triangle">
+      <img src="./images/icon-paper.svg" alt="" class="icon paper" id="paper" choice="paper">
+      <img src="./images/icon-scissors.svg" alt="" class="icon scissors" id="scissors" choice="scissors">
+      <img src="./images/icon-rock.svg" alt="" class="icon rock" id="rock" choice="rock">
+    </div>
+
+    <div class="game">
+      <div class="you" id="img-user">
+        <h1>You Picked</h1>
+      </div>
+      <div class="status">
+        <h2 class="result"></h2>
+        <button id="again">Play Again</button>
+      </div>
+      <div class="house" id="img-computer">
+        <h1>The House Picked</h1>
+      </div>
+    </div>
+    
+  </main>
+</body>
+
+<footer>
+  <button id="reset-btn">Reset</button>
+  <button id="rules-btn">Rules</button>
+  
+</footer>
+<div class="attr">
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</div>
+<script src="script.js"></script>
+</html>

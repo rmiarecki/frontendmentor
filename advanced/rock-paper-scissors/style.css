@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  text-transform: uppercase;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: white;
+}
+.attribution a {
+  color: hsl(229deg, 88%, 84%);
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(hsl(214deg, 47%, 23%), hsl(237deg, 49%, 15%));
+  background-repeat: no-repeat;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+header {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1.5rem auto;
+  width: 500px;
+  border: 1px solid hsl(217deg, 16%, 45%);
+  border-radius: 15px;
+}
+header h1 {
+  line-height: 25px;
+  color: #fff;
+}
+header h2 {
+  font-size: 38px;
+}
+
+.score {
+  text-align: center;
+  border-radius: 10px;
+  width: 100px;
+  height: 60px;
+  padding: 10px;
+  background-color: #fff;
+}
+
+main {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  color: #fff;
+}
+main button {
+  margin-top: 1rem;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: hsl(29deg, 100%, 34%);
+  background-color: #fff;
+  padding: 0.6rem 1.4rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.icon {
+  margin-right: 1rem;
+  background-color: #fff;
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.game-icons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "a b" "c c";
+  place-items: center;
+  height: 30rem;
+  width: 30rem;
+  position: relative;
+}
+
+.triangle {
+  position: absolute;
+  z-index: -1;
+}
+
+.game {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "a b c";
+  place-items: center;
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+}
+.game h1 {
+  margin-bottom: 1.5rem;
+}
+
+.house, .you {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.house img, .you img {
+  width: 150px;
+  height: 150px;
+}
+
+.you {
+  grid-area: a;
+}
+
+.house {
+  grid-area: c;
+}
+
+.status {
+  grid-area: b;
+  margin: 0 4rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.status h2 {
+  font-size: 40px;
+}
+
+.paper {
+  border: 25px solid rgb(0, 60, 255);
+  grid-area: a;
+}
+
+.scissors {
+  border: 25px solid rgb(241, 160, 10);
+  grid-area: b;
+}
+
+.rock {
+  border: 25px solid rgb(241, 10, 10);
+  grid-area: c;
+}
+
+.rules {
+  position: absolute;
+  z-index: 1;
+  color: #000;
+  display: none;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+.rules img {
+  position: relative;
+}
+.rules .close {
+  cursor: pointer;
+}
+
+.rules-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  margin: 5rem 3rem 3rem auto;
+}
+footer button {
+  font-size: 14px;
+  letter-spacing: 2px;
+  border: none;
+  background: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 0.3rem 1.2rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    width: 375px;
+  }
+  main {
+    width: 375px;
+    margin: 0 auto;
+  }
+  footer {
+    margin: 1rem auto;
+  }
+  .game {
+    text-align: center;
+    width: 375px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    grid-template-areas: "a b" "c c";
+    place-items: center;
+  }
+  .game h1 {
+    width: 200px;
+    vertical-align: center;
+    font-size: 25px;
+  }
+  .you {
+    grid-area: a;
+  }
+  .house {
+    grid-area: b;
+  }
+  .status {
+    grid-area: c;
+    margin-top: 2.5rem;
+  }
+  .house img, .you img {
+    width: 75px;
+    height: 75px;
+  }
+}/*# sourceMappingURL=style.css.map */
